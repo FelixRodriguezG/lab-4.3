@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
+
+:root {
+  /* Colores */
+  --color-primary: rgb(67, 163, 230);
+  --color-dark-blue: rgb(25, 33, 41);
+  --color-white: white;
+  --color-text: rgb(0, 0, 0);
+
+  /* Tipografía - Headings */
+  --font-h1-size: 9em;
+  --font-h2-size: 5em;
+  --font-h3-size: 4.2em;
+  --font-h4-size: 1.5em;
+  --font-h5-size: 1.2em;
+  --font-text: 2em;
+  --font-text-quote: 2.5em;
+  --font-text-card: 1.7em;
+  --font-text-team: 1.7em;
+  --font-text-form: 1.5em;
+
+
+
+  --font-heading-align-center: center;
+  --font-uppercase: uppercase;
+
+  --line-height-h2: 4em;
+  --line-height-h3: 1em;
+  --line-height-h4: 1em;
+  --line-height-h5: 1em;
+
+  --letter-spacing-h4: 0.4px;
+  --letter-spacing-link-btn: 0.5px;
+
+  /* Fondo del body */
+  --background-body: #ffffff;
+
+  /* Transiciones (opcional) */
+  --transition-fast: 0.2s ease-in-out;
+}
+
+/* Minimal CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  line-height: 3.5em;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1 {
+  font-size: var(--font-h1-size);
+  text-align: var(--font-heading-align-center);
+  text-transform: var(--font-uppercase);
+  display: flex;
+  justify-content: center;
+  align-items: first baseline;
+  img
+}
+
+h2 {
+  font-size: var(--font-h2-size);
+  text-align: var(--font-heading-align-center);
+  text-transform: var(--font-uppercase);
+  margin-right:2rem;
+  color: var(--color-white);
+  text-shadow: #020819 8px -20px 9px;
+}
+
+h3 {
+  font-size: var(--font-h3-size);
+  text-align: var(--font-heading-align-center);
+  line-height: var(--line-height-h3);
+}
+
+h4 {
+  font-size: var(--font-h4-size);
+  letter-spacing: var(--letter-spacing-h4);
+  line-height: var(--line-height-h4);
+}
+
+h5 {
+  font-size: var(--font-h5-size);
+  line-height: var(--line-height-h5);
+}
+
+.nav-bar {
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+  padding-block: .5rem;
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+
+  }
+
+  ul li {
+    text-decoration: none;
+    letter-spacing: var() color: var(--color-white);
+    font-size: var(--font-text);
+    font-family: "Roboto Condensed";
+
+  }
+}
+
+header.header {
+  background-image: url('https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  aside{
+    margin-top: auto;
+    margin-bottom: 12em;
+  }
+
+}
+
+.quote {
+  font-size: var(--font-text-quote);
+  margin-left: 10vw;
+  align-self: center;
+}
+
+.dark-background {
+  background-color: var(--color-dark-blue);
+  color: var(--color-white);
+}
+
+section#general-information {
+  padding: 4rem 0;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  
+  >article{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+  }
+
+  .text {
+    font-size: var(--font-text);
+    font-weight: 100;
+    text-align: var(--font-heading-align-center);
+  }
+
+  .link-btn {
+    font-family: "Roboto Condensed";
+    font-size: var(--font-text);
+    text-decoration: none;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    letter-spacing: var(--letter-spacing-link-btn);
+    padding: .8em 3em;
+  }
+}
+
+section#structure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 4rem;
+  gap:2rem;
+  
+  div.cards-container{
+    gap: 4rem;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    width: 60vw;
+    
+    article.service-box{
+      gap: 1em;
+      padding: 1rem;
+      border-radius: 20px;
+      box-shadow: 
+      2px 2px 20px rgba(196, 195, 195, 0.31),
+      -2px -2px 20px rgba(196, 195, 195, 0.31);
+      
+      width: 470px;
+      font-size: var(--font-text-card);
+      text-align: var(--font-heading-align-center);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 125px;
+  }
+    };
+  }
+}
+
+section#team{
+  display: flex;
+  flex-direction: column;
+  padding-block: 4rem;
+
+  align-items: center;
+
+  .section-text{
+    text-align: center;
+    width:31vw;
+    font-size: var(--font-text-team);
+    
+  }
+  hr {
+    margin-top: 1.5rem;
+    width:23%;
+    margin: 0 auto;
+  }
+  
+  div.team-container{
+    margin-top: 1rem;
+    display: flex;
+    gap: 5rem;
+
+    .member-name{
+      margin-block: 1rem;
+      font-size: var(--font-h4-size);
+      font-weight: 700;
+      text-align: center;
+    }
+    
+    & img {
+    width:250px;
+    height: 180px;
+  }
+}
+}
+
+section#schedule{
+  padding-block: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  
+  table {
+    width: 30%;
+   
+    border-collapse: collapse;
+    background: var(--color-white);
+    font-size: 1.5em;
+    
+  }
+
+  th, td {
+    
+    text-align: center;
+    border-bottom: 1px solid #272424;
+  }
+
+  th {
+
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+form{
+  display: flex;
+  font-size: var(--font-text-form);
+  width: 25%;
+  gap: 1em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  input, select{
+    width: 100%;
+  }
+  button.submit{
+    background-color: rgb(255, 255, 255);
+    padding: .7em;
+    font-weight: 500;
+    border: 1px solid black;
+  }
+}
+}
+
+
+footer#footer{
+display: flex;
+padding-block: 3rem;
+gap: 15rem;
+justify-content: space-around;
+padding-inline: 10em;
+text-align: center;
+font-size: var(--font-text-form);
+
+
+> section.address{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .2rem;
+  
+  address{
+    text-transform: none;
+    font-style: normal;
+    margin-bottom: 2rem;
+    
+  }
+
+  & a{
+    color: var(--color-primary);
+  }
+
+}
+iframe.map{
+  flex-grow: 3;
+  height: 280px;
+}
+
+}
