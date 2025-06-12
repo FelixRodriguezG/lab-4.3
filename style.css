@@ -278,7 +278,7 @@ section#schedule{
   }
 
   th, td {
-    
+    padding-inline: 1rem;
     text-align: center;
     border-bottom: 1px solid #272424;
   }
@@ -299,6 +299,7 @@ form{
   justify-content: center;
   input, select{
     width: 100%;
+    padding: .3rem;
   }
   button.submit{
     background-color: rgb(255, 255, 255);
